@@ -1,0 +1,842 @@
+:root {
+    --bs-body-bg: #151515;
+    --light-black: #242424;
+    --whitegrey: #d9d9d9;
+    --under-line-green: hsl(153, 71%, 59%);
+
+    --font-hxl: 5.5rem;
+    --font-hl: 3rem;
+    --font-hm: 1.5rem;
+    --font-m: 1.2rem;
+
+
+}
+
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.containertop {
+    background-color: var(--bs-body-bg);      
+    font-family: 'Space Grotesk', sans-serif;
+
+}
+
+
+.containerbottom {
+    background-color: var(--light-black);      
+    font-family: 'Space Grotesk', sans-serif;
+
+}
+
+.container {
+    background-color: var(--bs-body-bg);
+    color: #fff;
+    display: flex;
+    flex-direction: column;    
+    padding: 0rem;
+}
+
+.top {
+   
+    letter-spacing: -0.0275rem;
+    display: flex;
+    margin-bottom: 5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.bold {
+    font-weight: bold;
+
+}
+
+
+.hleft {
+    font-size: var(--font-hl);
+    width: 60%;
+    position: relative;
+    z-index: 2;
+
+
+
+}
+
+.hright {
+    width: 40%;
+    font-size: var(--font-hl);
+   
+    background-image: url('./images/image-profile-desktop.webp');
+    background-position: right bottom;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    text-align: end;
+    position: relative;
+    z-index: 1;
+
+}
+
+
+.largeresponsive {
+    display: block
+}
+
+.mobileresponsive {
+    display: none
+}
+
+
+.hright img,
+.fright img {
+
+    padding-left: 2rem;
+}
+
+
+.ring {
+    position: absolute;
+    top: 15%;
+    left: -20%;
+
+}
+
+
+.circle {
+    position: absolute;
+    bottom: 15%;
+    right: -9%;
+}
+
+
+
+
+.greeting h1 {
+    padding-top: 8rem;
+    font-size: var(--font-hxl);
+    line-height: var(--font-hxl);
+    letter-spacing: -0.025rem;
+    white-space: nowrap;
+
+
+
+}
+
+
+.greeting p {
+    padding-top: 3rem;
+    font-size: var(--font-m);
+}
+
+.underlinegr {
+    text-decoration: underline;
+    text-decoration-color: var(--under-line-green);
+    text-underline-offset: 0.5rem;
+   
+
+}
+
+.contact {
+
+    padding-top: 3rem;
+    padding-bottom: 8rem;
+    text-align: start;
+    font-size: var(--font-hm);
+    text-underline-offset: 0.5rem;
+}
+
+.contact a,
+.leftcontact a,
+.insideresponsive a {
+    color: #fff;
+}
+
+.contact a:hover,
+.leftcontact a:hover {
+    color: var(--under-line-green)
+}
+
+
+.middle {
+
+    border-top: 3px solid var(--whitegrey);
+    position: relative;
+    overflow: hidden;
+
+
+}
+
+.ringmiddle {
+    position: absolute;
+    bottom: -0%;
+    right: -19%;
+
+}
+
+.middle h1 {
+    font-size: var(--font-hl);
+
+}
+
+
+.middle [class*="col"] {
+    padding-top: 2rem;
+}
+
+
+.bottom {
+   
+    margin-top: 5rem;
+}
+
+.project {
+   
+    display: flex;
+    width: 100%;
+}
+
+.projhead {
+    width: 50%;
+}
+
+.projhead h1,
+.mcontact h1 {
+    font-size: var(--font-hxl);
+
+}
+
+.leftcontact {
+    align-self: center;
+    text-align: end;
+    width: 50%;
+    font-size: var(--font-hm);
+    text-underline-offset: 0.5rem;
+
+
+}
+
+
+
+.thumbnail {
+    
+    margin-top: 5rem;
+
+}
+
+.card{
+    border: none;
+}
+
+
+.overlay a {
+    color: #fff;
+    font-size: var(--font-hm);
+}
+
+.inside {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.insideresponsive {
+
+    font-size: var(--font-hm);
+
+    display: none;
+    width: 100%;
+}
+
+
+.overlayresponsive {
+    width: 50%;
+}
+
+.parent:hover {
+    opacity: 0.5;
+
+}
+
+.parent:hover .inside {
+    display: block;
+}
+
+.card-body {
+    background-color: var(--bs-body-bg);
+    padding-left: 0rem;
+    padding-bottom: 5rem;
+}
+
+.card-body p {
+    word-spacing: 1rem;
+}
+
+.mesg {
+    background-color: var(--light-black);
+    display: flex;
+    padding-top: 4rem;
+    border-bottom: 3px solid var(--whitegrey);
+
+}
+
+.mcontact {
+    width: 40%;
+    padding-right: 1rem;
+
+}
+
+.mcontact p {
+    font-size: var(--font-m);
+}
+
+.mform {
+    width: 60%;
+    text-align: end;
+}
+
+textarea {
+    resize: none;
+}
+
+
+.inputmesg {
+    border:none ;
+    border-bottom: 3px solid var(--whitegrey);
+    margin-left: 40%;
+    margin-bottom: 2rem;
+    
+
+}
+
+
+
+input[type=text], input[type=email], textarea{
+
+    width: 100%;
+    box-sizing: border-box;
+    background-color: var(--light-black);
+    border: none;
+    padding-bottom: 1rem;
+    font-size: var(--font-hm);
+    color: #fff;
+
+}
+
+
+
+
+
+
+
+input[type=submit]{
+min-width: 20%;
+   box-sizing: border-box;
+    background-color: var(--light-black);
+    border: none;
+    padding-bottom: 1rem;
+    font-size: var(--font-hm);
+    color: #fff;
+
+
+}
+.submit{
+  
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.submitleft{
+    text-align: right; 
+}
+
+input[type=submit]:hover {
+    color: var(--under-line-green);
+}
+
+
+.footer {
+    background-color: var(--light-black);
+    display: flex;
+    padding: 3rem 0rem;
+
+}
+
+
+.fleft {
+
+    width: 50%;
+    font-size: var(--font-hl);
+}
+
+.fright {
+
+    width: 50%;
+    text-align: right;
+}
+
+.fright img {
+
+    padding-left: 2rem;
+}
+
+
+.icon:hover {
+
+   fill: #fff
+
+}
+
+
+
+
+.formerror{
+    color: rgba(255, 0, 0, 0.446);
+    font-size: var(--font-hm);
+    font-weight: bold;
+}
+
+/*xxl above 1400*/
+@media only screen and (min-width: 1200px) {
+    .greeting h1 {
+        font-size: 5.9rem;
+        line-height: 5.9rem;
+        letter-spacing: 0.05rem;
+    }
+
+    .ringmiddle {
+        position: absolute;
+        bottom: -0%;
+        right: -25%;
+
+    }
+    
+
+}
+
+/*x-large*/
+@media only screen and (min-width: 1000px)and (max-width: 1190px) {
+
+    .greeting h1 {
+        font-size: 4.5rem;
+        line-height: 4.5rem;
+    }
+
+    .ring {
+        position: absolute;
+        top: 15%;
+        left: -30%;
+
+    }
+
+    .ringmiddle {
+        position: absolute;
+        bottom: -0%;
+        right: -35%;
+
+    }
+
+  
+}
+
+/*large*/
+@media only screen and (min-width: 775px) and (max-width: 999px) {
+
+    .greeting h1 {
+        font-size: 3.5rem;
+        line-height: 3.5rem;
+    }
+
+    .ring {
+        position: absolute;
+        top: 15%;
+        left: -45%;
+
+    }
+
+    .ringmiddle {
+        position: absolute;
+        bottom: -0%;
+        right: -45%;
+
+    }
+
+}
+
+/*medium*/
+@media only screen and (min-width: 576px) and (max-width: 774px) {
+    :root {
+        --font-hxl: 3rem;
+        --font-hl: 2rem;
+        --font-hm: 1.5rem;
+        --font-m: 1.2rem;
+
+    }
+
+    .greeting h1 {
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+    }
+
+    .ring {
+        position: absolute;
+        top: 15%;
+        left: -65%;
+
+    }
+
+    .circle {
+        position: absolute;
+        bottom: 0%;
+        right: -90%;
+    }
+
+
+    .ringmiddle {
+        position: absolute;
+        bottom: -0%;
+        right: -50%;
+
+    }
+
+    .greeting p,
+    .middle p {
+
+        font-size: var(--font-m);
+    }
+
+
+    .contact {
+        font-size: var(--font-hm);
+    }
+
+    .middle h1 {
+        font-size: var(--font-hl);
+
+    }
+
+    .projhead h1 {
+        font-size: var(--font-hxl);
+
+    }
+
+
+    .projhead {
+        width: 70%;
+    }
+
+    .leftcontact {
+        width: 30%;
+    }
+
+
+    .insideresponsive {
+
+        font-size: var(--font-hm);
+
+        display: flex;
+
+    }
+
+    .parent:hover .inside {
+        display: none;
+    }
+
+    .mesg {
+        flex-direction: column;
+        padding-top: 3rem;
+        text-align: center;
+    }
+
+    .mcontact {
+        width: 100%;
+    }
+
+    .mcontact h1 {
+        font-size: 3.5rem;
+
+    }
+
+    .mcontact p {
+        font-size: 1.5rem;
+        font-weight: -0.1px;
+    }
+
+    .mform {
+        width: 100%;
+
+    }
+
+    .inputmesg {
+        margin-left: 0%;
+        margin-bottom: 2rem;
+    }
+
+
+    input[type=text],
+    input[type=email],input[type=submit]
+    textarea {
+
+        padding-top: 2rem;
+        padding-left: 1rem;
+        font-size: 1.5rem;
+
+
+    }
+
+    input[type=submit] {
+
+        font-size: 1.5rem; 
+       
+        margin-bottom: 3rem;
+
+    }
+
+
+
+}
+
+
+/*mobile*/
+@media only screen and (max-width: 576px) {
+    .container {
+        padding: 0.5rem;
+    }
+
+    :root {
+        --font-hxl: 2rem;
+        --font-hl: 1rem;
+        --font-hm: 1rem;
+        --font-m: 0.8rem;
+
+    }
+
+    .top {
+
+        flex-direction: column-reverse;
+    }
+
+    .largeresponsive {
+        display: none
+    }
+
+    .mobileresponsive {
+        display: block;
+        padding-bottom: 0.1rem;
+    }
+
+
+    .hright {
+        width: 50%;
+        padding-bottom: 20rem;
+        margin: auto;
+        font-size: 2rem;
+        text-align: center;
+        line-height: 1.5rem;
+
+    }
+
+    .hright img {
+
+        padding: 0.4rem;
+    }
+
+    .hleft {
+        font-size: var(--font-hl);
+        width: 100%;
+        text-align: center;
+
+
+    }
+
+
+
+    .greeting h1 {
+        padding-top: 2rem;
+        font-size: var(--font-hxl);
+        line-height: var(--font-hxl);
+    }
+
+    .greeting p {
+        padding-top: 1rem;
+        font-size: 1.2rem;
+        font-style: normal;
+        font-weight: -0.1px;
+    }
+
+    .contact {
+
+        padding-top: 1rem;
+        padding-bottom: 3rem;
+        text-align: center;
+        font-size: 1.2rem;
+        text-underline-offset: 0.5rem;
+    }
+
+    .ring {
+        display: block;
+        position: absolute;
+        top: 15%;
+        left: -90%;
+
+    }
+
+    .circle {
+        position: absolute;
+        top: 10%;
+        left: 90%
+    }
+
+
+    .ringmiddle {
+        position: absolute;
+        right: -60%;
+        bottom: -0%;
+
+    }
+
+    .insideresponsive {
+
+        font-size: 1.5rem;
+
+        display: flex;
+
+    }
+
+
+    .parent:hover .inside {
+        display: none;
+    }
+
+    .middle {
+        text-align: center;
+        padding-bottom: 3rem;
+        border-bottom: 3px solid var(--whitegrey);
+    }
+
+    .middle h1 {
+        font-size: 3rem;
+    }
+
+    .middle p {
+        font-size: 1.5rem;
+        font-style: normal;
+
+    }
+
+    .projhead h1 {
+        font-size: 3rem;
+
+    }
+
+
+    .leftcontact {
+        font-size: 1.5rem;
+
+        font-weight: -0.1px;
+
+    }
+
+
+    .thumbnail {
+        margin-top: 2rem;
+    }
+
+    .card-body {
+
+        padding-bottom: 3rem;
+    }
+
+    .card-body h4 {
+        font-size: 2rem;
+    }
+
+    .card-body p {
+        font-size: 1.5rem;
+        font-weight: -0.1px;
+        word-spacing: 1rem;
+    }
+
+
+    .mesg {
+        flex-direction: column;
+        padding-top: 3rem;
+        text-align: center;
+    }
+
+    .mcontact {
+        width: 100%;
+    }
+
+    .mcontact h1 {
+        font-size: 3.5rem;
+
+    }
+
+    .mcontact p {
+        font-size: 1.5rem;
+        font-weight: -0.1px;
+    }
+
+    .mform {
+        width: 100%;
+
+    }
+
+    .inputmesg {
+        margin-left: 0%;
+        margin-bottom: 2rem;
+    }
+
+
+    input[type=text],
+    input[type=email],input[type=submit],
+    textarea {
+
+        padding-top: 2rem;
+        padding-left: 1rem;
+        font-size: 1.5rem;
+
+
+    }
+
+    input[type=submit]{
+
+        font-size: 1.5rem;
+        text-underline-offset: 0.5rem;       
+        margin-bottom: 3rem;
+
+    }
+
+  
+  
+
+    .footer {
+        flex-direction: column;
+
+    }
+
+
+    .fleft {
+
+        width: 100%;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .fright {
+        width: 100%;
+        font-size: 2.5rem;
+        text-align: center;
+
+    }
+
+    .fright img {
+        padding: 0.5rem;
+    }
+}
